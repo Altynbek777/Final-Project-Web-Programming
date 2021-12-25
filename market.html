@@ -1,0 +1,218 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\User\Desktop\FinalProject-Bank\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Дүкен</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<nav>
+<header>
+    <div class="zagalovok">
+        <a><img src="C:\Users\User\Desktop\FinalProject-Bank\3899280.png" width="40px" height="40px"></a>
+        <a class="text" href="market.html">Дүкен</a> 
+        <a href="tolemder.html" class="text">Төлемдер</a>
+        <a href="#" class="text">Жеке Банк</a> 
+        <a href="#" class="text">Бонус</a>
+        <a href="#" class="text">Карта</a>
+        <a href="#" class="text">Аударымдар</a>
+        <a class="text"> Мемлекеттік қызметтер</a> 
+        <a href="#"><img src="C:\Users\User\Desktop\FinalProject-Bank\image_2021-12-14_17-22-45.png"></a>
+        </div>
+</header>
+</nav>
+<div class="searchline">
+    <div style="margin-top: 13px;">
+        <input type="text" placeholder="Іздеу..." width="300px">
+        <button type="submit" style="height: 42px; width: 42px;"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="app" class="vue">
+    <div>
+        <span>Қалаңызды таңдаңыз: {{ showText(selected) }}</span>
+    </div>
+        <select name="text" id="aaa" v-model="selected">
+            <option value="" selected v-for="option in options" v-bind:value="option.value">{{ option.text }}</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="market">
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo" >Барлық тауарлар</a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Спорт жабдықтары</a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Киім </a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Аяқ киімдер</a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Телефон, Гаджеттер</a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Тұрмыстық техника</a>
+    </div>
+    <div style="border: 1px;border-color: rgb(78, 70, 70);">
+        <a href="" class="zogo">Сәндік бұйымдар</a>
+    </div>
+</div>
+<hr>
+<div>
+<img src="C:\Users\User\Downloads\5_auto_x2.jpg" alt="" class="aaa">
+</div>
+<div >
+    <div class="sale">
+    <p class="shrift">Жаңа жылдық жеңілдіктер:</p>
+    </div>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
+             style="height: 250px; width: 100%; display: block;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJ3tgVGqr8WI5yKHbbMI1_uyW_xnWsoHInQ&usqp=CAU" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">Айфон 12. Небәрі 349 990 Тг.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Сатып алу</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Сатып алу</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="data:image/jpeg;base64,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" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="card-text">Айфон 12 Небәрі 349 990 Тг</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Сатып алу</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Себетке салу</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdgBrGRJp6lT8zhgvaW1cysdUsAK_28fzx5A&usqp=CAU" data-holder-rendered="true" style="height: 250px; width: 100%; display: block;">
+            <div class="card-body">
+              <p class="card-text">Айфон 12. Небәрі 349 990 Тг.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Сатып алу</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Себетке салу</button>
+                </div>
+                <small class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <hr>
+
+
+<footer>
+    <p>Altynbek <br>
+    
+ 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+         <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+       </svg> 
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+         <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+         <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+         <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+       </svg>
+     </p>
+     
+  </footer>
+   
+  <script>
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      selected: 'A',
+      selectedText: '',
+      options: [{
+        text: 'Алматы',
+        value: 'A'
+      }, {
+        text: 'Нұр-Сұлтан',
+        value: 'B'
+      }, {
+        text: 'Қызылорда',
+        value: 'C'
+      },
+      {
+          text: 'Шымкент',
+          value: 'D'
+          },
+          {
+              text: 'Ақтау',
+              value: 'E'
+          },
+          {
+              text: 'Атырау',
+              value: 'F'
+          },
+          {
+              text: 'Ақтөбе',
+              value: 'G'
+          },
+          {
+              text: 'Орал',
+              value: 'H'
+          },
+          {
+              text: 'Атырау',
+              value: 'F'
+          },
+          {
+              text: 'Семей',
+              value: 'I'
+          },
+          {
+              text: 'Павлодар',
+              value: 'K'
+          }
+
+      ]
+    },
+    methods: {
+      showText: function(val) {      
+        for (var i = 0; i < this.options.length; i++) {
+          if (this.options[i].value === val){
+            this.selectedText = this.options[i].text;
+            return this.options[i].text;
+          }
+        }
+        return '';
+      }
+    }
+  });
+  </script>
+</body>
+</html>

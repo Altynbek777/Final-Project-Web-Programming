@@ -1,0 +1,182 @@
+.zagalovok{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+.picture{
+    width: 40px; 
+    height:40px;
+}
+.text{
+    font-size: 20px; 
+    text-decoration: none;
+    color: rgb(231, 88, 17);
+}
+header{
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgba(10, 10, 10, 0.726);
+    position: sticky;
+}
+body{
+    padding:0 ;
+    margin:0;
+}
+.second{
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.icons{
+    border-color: rgb(211, 200, 200);
+    border: 1px;
+    width: 170px;
+    height: 190px;
+    border-radius: 1px;
+    display: block; 
+}
+.navbar{
+    display: block; 
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+.kvadrat{
+    background-color: rgb(247, 240, 240);
+    border: 1px, rgb(201, 199, 199);
+    border-radius: 1px;
+    width: 250px;
+    height: 200px;
+}
+.navtext{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(53, 51, 51);
+}
+.searchline{
+    margin-top: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+footer {
+    text-align: center;
+    background-color:hsl(260, 59%, 18%); 
+    color: rgb(253, 253, 255);
+    margin-top: 100px; 
+    padding:3px;
+}
+.market{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: 1px;
+    border-color: rgb(78, 70, 70);
+}
+a{
+    text-decoration: none;
+}
+.zogo{
+    font-size: 20px;
+    color: rgb(75, 71, 71);
+    text-decoration: none;
+}
+input {
+    width: 250px;
+    height: 42px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 2px solid #324b4e;
+    background: rgb(218, 205, 205);
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+  }
+  .sale{
+      display: flex;
+      justify-content: center;
+  }
+  .shrift{
+      font-size: 30px;
+      color: rgb(58, 51, 51);
+  }
+  table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-collapse: collapse;
+    color: #686461;
+  }
+  caption {
+    padding: 10px;
+    color: white;
+    background: #8FD4C1;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+  }
+  .aaa{
+    width: 100%;
+    height: 400px;
+}
+  th {
+    border-bottom: 3px solid #B9B29F;
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    padding: 10px;
+  }
+  tr:nth-child(odd) {
+    background: white;
+  }
+  tr:nth-child(even) {
+    background: #E8E6D1;
+  } 
+  .tbl{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+  }
+  .klient{
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+  }
+  .vue{
+      display: block;
+      justify-content: center;
+  }
+  @media screen and (max-width: 1024px) {
+    .text{
+        font-size: 10px; 
+        text-decoration: none;
+        color: rgb(231, 88, 17);
+    }
+    header{
+       width: 100%; height: auto;
+
+    }
+    .picture{
+        width: 15px;
+        height: auto;
+    }
+    body{
+        height: 100%;
+    }
+    .zogo{
+        font-size: 12px;
+    }
+    input{
+        width: 100px;
+    }
+    footer{
+        width: 100%;
+    }
+    .aaa{
+        width: 1024px;
+        height: 200px;
+    }
+  }
